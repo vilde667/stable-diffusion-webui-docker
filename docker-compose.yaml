@@ -1,0 +1,25 @@
+version: "3"
+services:
+  stable_diffusion:
+    deploy:
+      resources:
+        limits:
+          cpus: '0.8'
+          memory: 8196M
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    build:
+      context: .
+    command: sh -c "python3 /sd/launch.py --listen --api --skip-torch-cuda-test --enable-insecure-extension-access --port 9090"
+    ports:
+      - "9090:9090"
+    volumes:
+      - type: bind
+        source: /d/stable-diffusion/repositories
+        target: /sd/repositories
+      - type: bind
+        source: /d/stable-diffusion/models
+        target: /sd/models
