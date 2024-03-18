@@ -18,8 +18,11 @@ services:
       - "9090:9090"
     volumes:
       - type: bind
-        source: /d/stable-diffusion/repositories
+        source: #place here path to repositories#
         target: /sd/repositories
       - type: bind
-        source: /d/stable-diffusion/models
+        source: #place here path to models#
         target: /sd/models
+      - type: bind
+        source: #place here path to output#
+        target: /sd/output
