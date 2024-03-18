@@ -14,6 +14,10 @@ docker-compose up
 в docker-compose.yaml нужно указать путь к папкам хранения репозиториев webui, моделям и папке вывода сгенерированных изображений  
 Для запуска docker в windows пути нужно указывать в формате /d/stable-diffusion/repositories, где /d/ - буква диска
 
+# ссылки
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui
+https://github.com/facebookresearch/xformers
 ___
 
 # stable-diffusion-webui-docker
@@ -31,3 +35,8 @@ docker-compose up
 
 in docker-compose.yaml you need to specify the path to the webui repository storage folders, models and generated image output folder (like #place here path to repositories#)
 To run docker in Windows, paths must be specified in the format /d/stable-diffusion/repositories, where /d/ is the drive letter
+
+# links
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui
+https://github.com/facebookresearch/xformers
