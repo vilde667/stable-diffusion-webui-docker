@@ -16,8 +16,8 @@ docker-compose up
 
 # ссылки
 
-https://github.com/AUTOMATIC1111/stable-diffusion-webui
-https://github.com/facebookresearch/xformers
+https://github.com/AUTOMATIC1111/stable-diffusion-webui  
+https://github.com/facebookresearch/xformers  
 ___
 
 # stable-diffusion-webui-docker
@@ -38,5 +38,5 @@ To run docker in Windows, paths must be specified in the format /d/stable-diffus
 
 # links
 
-https://github.com/AUTOMATIC1111/stable-diffusion-webui
-https://github.com/facebookresearch/xformers
+https://github.com/AUTOMATIC1111/stable-diffusion-webui  
+https://github.com/facebookresearch/xformers  
