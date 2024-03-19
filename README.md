@@ -18,6 +18,20 @@ docker-compose up
 
 https://github.com/AUTOMATIC1111/stable-diffusion-webui  
 https://github.com/facebookresearch/xformers  
+
+# ошибки
+
+ошибка
+docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]]
+решается
+```
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/libnvidia-container/gpgkey | sudo apt-key add -
+curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+sudo apt-get update
+sudo apt-get install -y nvidia-docker2
+sudo systemctl restart docker
+```
 ___
 
 # stable-diffusion-webui-docker
@@ -40,3 +54,17 @@ To run docker in Windows, paths must be specified in the format /d/stable-diffus
 
 https://github.com/AUTOMATIC1111/stable-diffusion-webui  
 https://github.com/facebookresearch/xformers  
+
+# errors
+
+error
+docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]]
+solve
+```
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/libnvidia-container/gpgkey | sudo apt-key add -
+curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+sudo apt-get update
+sudo apt-get install -y nvidia-docker2
+sudo systemctl restart docker
+```
